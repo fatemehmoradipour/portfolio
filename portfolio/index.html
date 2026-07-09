@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Front-End Developer & Web Designer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Premium Tech Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #0ea5e9, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-200 min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800/80 backdrop-blur-md sticky top-0 z-50 bg-[#0f172a]/80">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold gradient-text tracking-tight font-mono">&lt;Dev.Portfolio /&gt;</div>
+            <nav class="flex gap-5 md:gap-6 text-xs md:text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+                <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
+                <a href="#education" class="hover:text-sky-400 transition-colors">Education</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 flex-grow w-full">
+        
+        <!-- Hero Section (Enhanced UI) -->
+<section id="about" class="py-12 md:py-24 flex flex-col md:flex-row items-center justify-between gap-12">
+    <div class="flex-1 text-left">
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-slate-100">
+            Hi, I'm <span class="gradient-text font-extrabold">fatemeh</span>
+        </h1>
+        
+        <!-- Animated Profession Title -->
+        <div class="text-xl md:text-3xl font-bold text-slate-300 mb-6 h-9">
+            I am a <span id="typed" class="text-sky-400 border-r-2 border-sky-400 pr-1"></span>
+        </div>
+
+        <!-- High-Contrast Introduction -->
+        <p class="text-slate-400 text-sm md:text-base leading-relaxed max-w-2xl mb-8">
+            I am a <span class="text-sky-400 font-medium">front-end developer</span> and web designer passionate about building clean, functional websites. With a solid foundation in core programming logic and database concepts, I focus on turning layouts into 
+            <span class="text-slate-100 font-semibold underline decoration-sky-500 decoration-2">interactive, responsive</span> user experiences. 
+            I prefer writing clean, understandable code and creating designs that simply work well on any screen.
+        </p>
+
+        <div class="flex gap-4">
+            <a href="#contact" class="bg-gradient-to-r from-sky-500 to-purple-600 text-white px-6 py-3 rounded-xl font-medium hover:opacity-90 transition-opacity shadow-lg shadow-sky-500/10">Get in Touch</a>
+            <a href="#projects" class="border border-slate-700 hover:border-slate-500 text-slate-300 px-6 py-3 rounded-xl font-medium transition-colors">View Work</a>
+        </div>
+    </div>
+    
+    <!-- Avatar/Profile Image Container -->
+<div class="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-tr from-sky-400 to-purple-500 p-1 shadow-xl shadow-purple-500/10">
+    <div class="w-full h-full bg-[#1e293b] rounded-full flex items-center justify-center overflow-hidden">
+        <!-- اگر عکس در کنار فایل html قرار دارد، نام آن را اینجا بنویسید -->
+        <img src="profile.jpeg" alt="My Profile Picture" class="w-full h-full object-cover">
+    </div>
+</div>
+</section>
+<!-- Script for Animated Text -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#typed', {
+        strings: ['Front-End Developer.', 'Web Designer.', 'Software Programmer.'],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true
+    });
+</script>
+            
+
+        <hr class="border-slate-800/60 my-16">
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-8">
+            <h3 class="text-2xl font-bold mb-2 flex items-center gap-3">
+                <i class="fa-solid fa-layer-group text-sky-400 text-xl"></i> Technical Stack
+            </h3>
+            <p class="text-slate-400 text-sm mb-8">The technologies, tools, and frameworks I work with on a regular basis.</p>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <!-- React JS -->
+                <div class="bg-[#1e293b]/40 border border-slate-800 p-4 rounded-xl flex items-center gap-3 hover:border-slate-700 transition-colors">
+                    <i class="fa-brands fa-react text-sky-400 text-2xl"></i>
+                    <span class="font-medium text-sm">React JS</span>
+                </div>
+                <!-- HTML5 & CSS3 -->
+                <div class="bg-[#1e293b]/40 border border-slate-800 p-4 rounded-xl flex items-center gap-3 hover:border-slate-700 transition-colors">
+                    <i class="fa-brands fa-html5 text-orange-500 text-2xl"></i>
+                    <span class="font-medium text-sm">HTML5 / CSS3</span>
+                </div>
+                <!-- C# -->
+                <div class="bg-[#1e293b]/40 border border-slate-800 p-4 rounded-xl flex items-center gap-3 hover:border-slate-700 transition-colors">
+                    <span class="text-purple-400 font-bold text-xl font-mono">C#</span>
+                    <span class="font-medium text-sm">C# Programming</span>
+                </div>
+                <!-- .NET -->
+                <div class="bg-[#1e293b]/40 border border-slate-800 p-4 rounded-xl flex items-center gap-3 hover:border-slate-700 transition-colors">
+                    <i class="fa-solid fa-network-wired text-purple-500 text-xl"></i>
+                    <span class="font-medium text-sm">.NET Framework</span>
+                </div>
+                <!-- C++ -->
+                <div class="bg-[#1e293b]/40 border border-slate-800 p-4 rounded-xl flex items-center gap-3 hover:border-slate-700 transition-colors">
+                    <span class="text-sky-500 font-bold text-xl font-mono">C++</span>
+                    <span class="font-medium text-sm">C++ Logic</span>
+                </div>
+                <!-- Python -->
+                <div class="bg-[#1e293b]/40 border border-slate-800 p-4 rounded-xl flex items-center gap-3 hover:border-slate-700 transition-colors">
+                    <i class="fa-brands fa-python text-yellow-500 text-2xl"></i>
+                    <span class="font-medium text-sm">Python</span>
+                </div>
+                <!-- Database -->
+                <div class="bg-[#1e293b]/40 border border-slate-800 p-4 rounded-xl flex items-center gap-3 hover:border-slate-700 transition-colors">
+                    <i class="fa-solid fa-database text-emerald-400 text-xl"></i>
+                    <span class="font-medium text-sm">Databases (SQL)</span>
+                </div>
+                <!-- Networks -->
+                <div class="bg-[#1e293b]/40 border border-slate-800 p-4 rounded-xl flex items-center gap-3 hover:border-slate-700 transition-colors">
+                    <i class="fa-solid fa-server text-amber-500 text-xl"></i>
+                    <span class="font-medium text-sm">Network Basics</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-slate-800/60 my-16">
+        
+        <!-- Experience Section -->
+<section id="experience" class="py-8">
+    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+        <i class="fa-solid fa-briefcase text-sky-400 text-xl"></i> Work Experience
+    </h3>
+    
+    <div class="space-y-6">
+<!-- Job 1: Alpan Academy -->
+<div class="bg-[#1e293b]/20 border border-slate-800/80 rounded-2xl p-6 hover:border-sky-500/30 transition-colors">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+        <div>
+            <h4 class="text-xl font-bold text-white">Alpan Academy</h4>
+            <span class="text-sm text-sky-400 font-medium block mt-1">Web Design & Programming Academy</span>
+        </div>
+        <span class="text-xs font-mono text-slate-500 bg-slate-800/50 px-3 py-1 rounded-full w-fit h-fit">
+            <i class="fa-regular fa-calendar-days mr-1"></i> 2024 — 2025
+        </span>
+    </div>
+    
+    <!-- Timeline inside the card -->
+    <div class="space-y-6 relative border-l border-slate-800 ml-2 pl-4 mt-4">
+        <!-- Role 1: Teaching Assistant & Content Creator -->
+        <div class="relative">
+            <div class="absolute -left-[21px] top-1 w-3 h-3 rounded-full bg-sky-500"></div>
+            <h5 class="text-sm font-semibold text-slate-200">Teaching Assistant & Content Creator</h5>
+            <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                Guided and mentored academy students throughout their learning and coding journeys, actively troubleshooting bugs and resolving technical challenges. Additionally, produced engaging educational and inspirational content focused on programming and web design to motivate and support learners.
+            </p>
+        </div>
+        
+        <!-- Role 2: Full-Stack Web Development Intern -->
+        <div class="relative">
+            <div class="absolute -left-[21px] top-1 w-3 h-3 rounded-full bg-purple-500"></div>
+            <h5 class="text-sm font-semibold text-slate-200"> Web Development & Programming Intern</h5>
+            <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                Served as an Advanced Full-Stack Developer Intern, gaining hands-on experience in building scalable web solutions. Mastered backend architectures and enterprise logic utilizing the .NET framework under the C# programming language, while designing dynamic, responsive interfaces using HTML5, CSS3, JavaScript, and jQuery for modern client-side functionality.
+            </p>
+        </div>
+    </div>
+</div>
+
+        <!-- Job 2: Hotel Arg Yazd -->
+        <div class="bg-[#1e293b]/20 border border-slate-800/80 rounded-2xl p-6 hover:border-purple-500/30 transition-colors">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                <div>
+                    <h4 class="text-lg font-bold text-white">IT Support & Network Technician</h4>
+                    <span class="text-sm text-purple-400 font-medium">New Arg Hotel Yazd</span>
+                </div>
+                <span class="text-xs font-mono text-slate-500 bg-slate-800/50 px-3 py-1 rounded-full w-fit">
+                    <i class="fa-regular fa-calendar-days mr-1"></i> 2023
+                </span>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed">
+                Provided technical support for server infrastructure, network stability, and IT hardware operations. Troubleshot daily technical issues and ensured smooth network connectivity throughout the complex.
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr class="border-slate-800/60 my-16">
+
+        <!-- Education Section (Two Degrees) -->
+<section id="education" class="py-8">
+    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+        <i class="fa-solid fa-graduation-cap text-purple-400 text-xl"></i> Education
+    </h3>
+    
+    <div class="flex flex-col gap-6">
+        <!-- 1. Bachelor's Degree (Current/Most Recent) -->
+        <div class="bg-[#1e293b]/20 border border-slate-800/80 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-purple-500/40 transition-colors">
+            <div>
+                <span class="text-xs font-semibold text-purple-400 uppercase tracking-wider bg-purple-500/10 px-3 py-1 rounded-full">Bachelor's Degree</span>
+                <h4 class="text-xl font-bold mt-3 text-white">Software Engineering</h4>
+                <p class="text-slate-400 text-sm mt-1">Islamic Azad University</p>
+            </div>
+            <div class="text-left md:text-right">
+                <span class="text-sm font-mono text-slate-500 block"><i class="fa-regular fa-calendar-days mr-1"></i> 2025 — Present</span>
+            </div>
+        </div>
+
+        <!-- 2. Associate Degree (Previous) -->
+        <div class="bg-[#1e293b]/20 border border-slate-800/80 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-sky-500/40 transition-colors">
+            <div>
+                <span class="text-xs font-semibold text-sky-400 uppercase tracking-wider bg-sky-500/10 px-3 py-1 rounded-full">Associate Degree</span>
+                <h4 class="text-xl font-bold mt-3 text-white">Computer Engineering</h4>
+                <p class="text-slate-400 text-sm mt-1">Meybod University</p>
+            </div>
+            <div class="text-left md:text-right">
+                <span class="text-sm font-mono text-slate-500 block"><i class="fa-regular fa-calendar-days mr-1"></i> 2023 — 2025</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <hr class="border-slate-800/60 my-16">
+
+        <!-- Projects Section (Coming Soon State) -->
+<section id="projects" class="py-8">
+    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+        <i class="fa-solid fa-cubes text-sky-400 text-xl"></i> Featured Projects
+    </h3>
+    
+    <!-- Single Elegant Coming Soon Card -->
+    <div class="bg-[#1e293b]/20 border border-dashed border-slate-700 rounded-2xl p-8 text-center max-w-2xl mx-auto flex flex-col items-center justify-center min-h-[250px] group hover:border-sky-500/50 transition-colors">
+        <div class="w-16 h-16 rounded-full bg-sky-500/10 flex items-center justify-center mb-4 text-sky-400 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-code-fork text-2xl animate-pulse"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-2 text-white">Projects are Cooking...</h4>
+        <p class="text-slate-400 text-sm leading-relaxed max-w-sm mb-4">
+            I am currently building and refining some exciting front-end applications, interactive designs, and software tools. They will be pushed to GitHub soon!
+        </p>
+        <span class="text-xs font-mono text-purple-400 bg-purple-500/10 px-3 py-1 rounded-full uppercase tracking-wider">
+            Coming Soon
+        </span>
+    </div>
+</section>
+
+        <hr class="border-slate-800/60 my-16">
+
+        <!-- Contact Section -->
+<section id="contact" class="py-8 text-center max-w-xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4 gradient-text">Let's Connect</h3>
+    <p class="text-slate-400 mb-8 px-4 text-sm md:text-base">
+        I am open to freelance opportunities, frontend developer positions, or collaboration on web projects. Feel free to reach out via any channel below!
+    </p>
+    
+    <!-- Direct Contact Methods -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-left max-w-md mx-auto px-4">
+        <div class="bg-[#1e293b]/30 border border-slate-800 p-4 rounded-xl flex items-center gap-3 w-full overflow-hidden">
+            <i class="fa-solid fa-envelope text-sky-400 text-lg shrink-0"></i>
+            <div class="min-w-0 flex-1">
+                <span class="text-xs text-slate-500 block">Email Me</span>
+                <a href="mailto:fatemehmoradipour199@gmail.com" class="text-sm font-medium hover:text-sky-400 transition-colors block break-all text-ellipsis overflow-hidden">
+                    Send an Email
+                </a>
+            </div>
+        </div>
+        
+        <!-- Location Box -->
+        <div class="bg-[#1e293b]/30 border border-slate-800 p-4 rounded-xl flex items-center gap-3 w-full">
+            <i class="fa-solid fa-location-dot text-purple-400 text-lg shrink-0"></i>
+            <div>
+                <span class="text-xs text-slate-500 block">Location</span>
+                <span class="text-sm font-medium">Yazd,Iran</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="flex justify-center gap-6 text-2xl text-slate-400 border-t border-slate-800/50 pt-6">
+        <a href="https://github.com/yourusername" target="_blank" class="hover:text-white transition-colors" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="hover:text-sky-400 transition-colors" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</section>
+        
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/40 py-6 text-center text-xs text-slate-500">
+        <p>© 2026 Designed & Developed with 💜</p>
+    </footer>
+
+</body>
+</html>
